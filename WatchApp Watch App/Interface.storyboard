@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d4g-1a-3YP">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
+    </dependencies>
+    <scenes>
+        <!--Customize-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="customizeController" title="Customize" id="AgC-eL-Hgc" customClass="CustomizeController">
+                    <items>
+                        <label width="136" height="19" alignment="left" text="Milk" id="0SB-Bt-eNJ">
+                            <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        </label>
+                        <button alignment="left" id="Urn-xK-VBj">
+                            <group key="contentGroup" width="1" height="40" alignment="left" spacing="4" id="04e-1B-Mm3">
+                                <items>
+                                    <imageView width="30" height="26" alignment="left" verticalAlignment="center" contentMode="center" id="141-oa-iZj"/>
+                                    <label width="102" height="20" alignment="left" verticalAlignment="center" text="Nonfat Milk" id="fvk-CK-O4m">
+                                        <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.98823529409999999" alpha="0.14000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="margins" left="2" right="2" top="2" bottom="2"/>
+                            </group>
+                            <connections>
+                                <action selector="firstTab" destination="AgC-eL-Hgc" id="bPK-g1-mZk"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="cJX-CB-UC2">
+                            <group key="contentGroup" width="1" height="40" alignment="left" spacing="4" id="HAN-oi-8KA">
+                                <items>
+                                    <imageView width="30" height="26" alignment="left" verticalAlignment="center" contentMode="center" id="bLG-pa-fyc"/>
+                                    <label width="102" height="20" alignment="left" verticalAlignment="center" text="Whole Milk" id="oga-AI-Wpi">
+                                        <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.98823529409999999" alpha="0.14000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="margins" left="2" right="2" top="2" bottom="2"/>
+                            </group>
+                            <connections>
+                                <action selector="secondTab" destination="AgC-eL-Hgc" id="0JD-iY-DWP"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="Uq2-hU-Mat">
+                            <group key="contentGroup" width="1" height="40" alignment="left" spacing="4" id="i1R-5m-GP1">
+                                <items>
+                                    <imageView width="30" height="26" alignment="left" verticalAlignment="center" contentMode="center" id="vj8-eU-ahS"/>
+                                    <label width="102" height="20" alignment="left" verticalAlignment="center" text="2% Milk" id="dQC-UC-yKh">
+                                        <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.98823529409999999" alpha="0.14000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="margins" left="2" right="2" top="2" bottom="2"/>
+                            </group>
+                            <connections>
+                                <action selector="thirdTab" destination="AgC-eL-Hgc" id="Jh7-uY-o4w"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <edgeInsets key="margins" left="4" right="4" top="2" bottom="2"/>
+                    <connections>
+                        <outlet property="frtBt" destination="Urn-xK-VBj" id="JXw-eW-l6N"/>
+                        <outlet property="frtImg" destination="141-oa-iZj" id="nvS-D8-vix"/>
+                        <outlet property="secBt" destination="cJX-CB-UC2" id="aD4-dZ-tVI"/>
+                        <outlet property="secImg" destination="bLG-pa-fyc" id="35r-p9-sHw"/>
+                        <outlet property="thrdBt" destination="Uq2-hU-Mat" id="WTM-cd-YxL"/>
+                        <outlet property="thrdImg" destination="vj8-eU-ahS" id="1nw-65-MZk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="798" y="348"/>
+        </scene>
+        <!--amountController-->
+        <scene sceneID="DBf-Cp-eLd">
+            <objects>
+                <controller identifier="amountController" id="kZY-Uy-NZ3" customClass="AmountController">
+                    <items>
+                        <label height="16" alignment="center" text="Amount Due" id="Jkm-bx-pkS">
+                            <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        </label>
+                        <group width="1" alignment="left" hasDetent="YES" id="CbA-p3-ku4">
+                            <items>
+                                <label alignment="left" text="ITEM" id="ZQz-CG-iOK">
+                                    <fontDescription key="font" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                </label>
+                                <label alignment="right" text="Amount" id="9kf-b6-nqH">
+                                    <fontDescription key="font" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="w6e-yI-tjC">
+                            <color key="color" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="1" alignment="left" hasDetent="YES" id="n7I-Wk-lNQ">
+                            <items>
+                                <label alignment="left" text="Lorem ipsum" id="I07-7Q-SAK">
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                </label>
+                                <label alignment="right" text="$4.44" id="ggH-LU-sht">
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" hasDetent="YES" id="S6z-fn-L62">
+                            <items>
+                                <label alignment="left" hidden="YES" text="Lorem ipsum" id="JAJ-3R-jf4">
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                </label>
+                                <label alignment="right" hidden="YES" text="$4.44" id="Qxg-Tp-Daf">
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="20" alignment="left" hasDetent="YES" id="g2k-kC-UxZ">
+                            <items>
+                                <label alignment="left" hidden="YES" text="Lorem ipsum" id="EqT-03-fGH">
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                </label>
+                                <label alignment="right" hidden="YES" text="$4.44" id="9dx-64-A3A">
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" hasDetent="YES" id="7ft-we-2FA">
+                            <items>
+                                <label alignment="left" text="Total" id="zil-05-A5y">
+                                    <fontDescription key="font" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                </label>
+                                <label alignment="right" text="$4.82" id="OQ2-bY-2h8">
+                                    <fontDescription key="font" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="121" height="22" alignment="center" hasDetent="YES" id="Cc6-3t-AYX">
+                            <items>
+                                <button width="55" height="22" alignment="left" backgroundImage="06" id="TeR-sg-W6W">
+                                    <connections>
+                                        <action selector="payTab" destination="kZY-Uy-NZ3" id="frl-jV-iFR"/>
+                                    </connections>
+                                </button>
+                                <button width="55" height="22" alignment="right" backgroundImage="07" id="lXk-tU-p83">
+                                    <connections>
+                                        <action selector="payTab" destination="kZY-Uy-NZ3" id="qIm-J0-yOC"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="itemLb" destination="I07-7Q-SAK" id="ef0-R5-IPR"/>
+                        <outlet property="priceLb" destination="ggH-LU-sht" id="zyK-80-QIV"/>
+                        <outlet property="totalLb" destination="OQ2-bY-2h8" id="Kp6-ht-mOp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="954" y="342"/>
+        </scene>
+        <!--Products-->
+        <scene sceneID="jiF-aV-KVj">
+            <objects>
+                <controller identifier="productDetail" title="Products" id="2s5-Hh-INF" customClass="ProdDetailController">
+                    <items>
+                        <label width="58" height="28" alignment="center" text="Holiday Specials" textAlignment="center" numberOfLines="2" id="DlV-tw-5ls">
+                            <fontDescription key="font" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="10"/>
+                        </label>
+                        <button alignment="center" id="Gov-Xg-pgq">
+                            <group key="contentGroup" width="66" height="71" alignment="left" id="ahK-Ks-y7q">
+                                <items>
+                                    <imageView width="40" height="40" alignment="center" verticalAlignment="center" image="01" id="xgc-OW-Hse"/>
+                                </items>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </group>
+                            <connections>
+                                <action selector="productTab" destination="2s5-Hh-INF" id="d9i-nC-mjH"/>
+                            </connections>
+                        </button>
+                        <label width="135" height="40" alignment="left" text="Lorem ipsum dolor" textAlignment="center" numberOfLines="2" id="rMV-JY-akK">
+                            <fontDescription key="font" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="pageLabel" destination="rMV-JY-akK" id="YbL-v5-GaJ"/>
+                        <outlet property="prodImg" destination="xgc-OW-Hse" id="bcN-VD-VV8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="446" y="348"/>
+        </scene>
+        <!--sizeController-->
+        <scene sceneID="4NM-Ff-o8t">
+            <objects>
+                <controller identifier="sizeController" id="xaN-lJ-a8U" customClass="SizeViewController">
+                    <items>
+                        <label alignment="center" text="Pick A Size" id="CFT-g1-CGb">
+                            <fontDescription key="font" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                        </label>
+                        <button alignment="center" id="8w5-Qu-NrE">
+                            <group key="contentGroup" width="66" height="71" alignment="left" id="39z-1H-mXa">
+                                <items>
+                                    <imageView width="60" height="60" alignment="center" verticalAlignment="center" image="Size" id="8bh-LP-ns0"/>
+                                </items>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </group>
+                            <connections>
+                                <action selector="sizeTab" destination="xaN-lJ-a8U" id="cWx-8S-oeD"/>
+                            </connections>
+                        </button>
+                        <label width="135" height="40" alignment="left" text="Lorem ipsum dolor" textAlignment="center" numberOfLines="2" id="l7H-rN-isE">
+                            <fontDescription key="font" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="cupSize" destination="l7H-rN-isE" id="DOv-6d-l8J"/>
+                        <outlet property="prodImg" destination="8bh-LP-ns0" id="SjG-U9-fkc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="627" y="348"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="225" y="729"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="787"/>
+        </scene>
+        <!--homeController-->
+        <scene sceneID="mna-YA-zin">
+            <objects>
+                <controller identifier="homeController" id="d4g-1a-3YP" customClass="HomeTableController">
+                    <items>
+                        <label alignment="left" text="Khurana's Bakery" id="Zp3-W9-AQ6">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <table alignment="left" layout="vertical" id="DKv-Wh-oWV">
+                            <items>
+                                <tableRow identifier="default" id="pNH-wP-CxM" customClass="HomeRowController">
+                                    <group key="rootItem" width="136" height="23" alignment="left" spacing="2" id="usX-AD-Km2">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" textAlignment="left" id="gcn-7T-Wbq">
+                                                <fontDescription key="font" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="10"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.98823529409999999" alpha="0.14000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <edgeInsets key="margins" left="2" right="2" top="2" bottom="2"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowLabel" destination="gcn-7T-Wbq" id="wWq-fZ-Qqh"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="interfaceTable" destination="DKv-Wh-oWV" id="bQu-Pj-NXg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="264" y="348"/>
+        </scene>
+    </scenes>
+</document>
